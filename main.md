@@ -44,4 +44,15 @@ Complexidade total da etapa
 
 T = (n-1)*[5+1+5+1+x+5+(5-x)+(5-(5-x))+3] + [5+1+5+1+x+4+y+6+5+1] = (n-1)*[x+25] + [x+y+28] = Definir complexidade em notação assintótica.
 
+### Conversão do resultado final caso o número obtido seja maior que 24 (horários de madrugada):
+
+Para a conversão do horário final temos 3 casos, sabendo que 24 = 11000:
+
+1. Se o número tiver 4 dígitos ou menos não é necessário fazer contas;
+2. Se o número tiver 5 dígitos, mas o segundo número é 0 (por exemplo 10100 = 20), também não é necessário;
+3. Se tiver 5 dígitos, e o segundo for 1, analisa-se os outros números e, se só tiver 0's, o resultado deve ser 0h, ou seja, estamos analisando o caso em que o resultado é 11000;
+4. Se tiver 5 dígitos e tiver mais de um 1, subtrai-se esse número por 24 (por exemplo 11010 = 26);
+5. Se tiver mais de 5 dígitos, subtrai-se o número maior por 24.
+
+Nesse sentido, pode-se fazer uma análise do número resultante da esquerda pra direita e, se o segundo símbolo for 1, entra-se em um loop para verficar se se trata do terceiro caso. Caso tenha outro 1, verifica-se o tamanho da palavra para ver se trata do caso 1, 4 ou 5. Para isso, é essencial verificar o contador. Se a palavra termina de ser processada e o contador não chega ao final, se trata do caso 1. Se a palavra termina de ser processada e o contador também, se trata do caso 4. Se o contador termina de ser processado e a palavra não chega ao final, se trata do caso 5.
 
