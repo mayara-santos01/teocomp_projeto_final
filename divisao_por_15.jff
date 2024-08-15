@@ -72,6 +72,11 @@
 			<x>582.0</x>
 			<y>746.0</y>
 		</state>
+		<state id="17" name="q19">
+			<x>371.0</x>
+			<y>823.0</y>
+			<final/>
+		</state>
 		<state id="21" name="q17">
 			<x>2085.0</x>
 			<y>584.0</y>
@@ -82,238 +87,46 @@
 		</state>
 		<!--The list of transitions.-->
 		<transition>
-			<from>8</from>
-			<to>9</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3">1</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>7</from>
-			<to>7</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>16</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>16</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>12</from>
-			<to>12</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>14</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>12</from>
-			<to>12</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>14</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>12</from>
-			<to>12</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>7</from>
-			<to>7</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>12</from>
-			<to>12</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>14</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>14</from>
-			<to>14</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
 			<from>3</from>
 			<to>0</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
 			<move tape="1">R</move>
 			<read tape="2"/>
 			<write tape="2"/>
 			<move tape="2">S</move>
 			<read tape="3"/>
-			<write tape="3">w</write>
+			<write tape="3">e</write>
 			<move tape="3">R</move>
 			<read tape="4"/>
 			<write tape="4"/>
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>9</from>
-			<to>10</to>
+			<from>0</from>
+			<to>1</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>7</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
 			<move tape="1">S</move>
 			<read tape="2">1</read>
-			<write tape="2"/>
-			<move tape="2">R</move>
+			<write tape="2">0</write>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
@@ -322,7 +135,71 @@
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>10</from>
+			<from>12</from>
+			<to>12</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>14</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>12</from>
+			<to>12</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>14</to>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>12</from>
 			<to>12</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
@@ -338,7 +215,23 @@
 			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>10</from>
+			<from>7</from>
+			<to>7</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">0</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>12</from>
 			<to>12</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
@@ -349,19 +242,147 @@
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
 			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>9</from>
-			<to>10</to>
+			<from>14</from>
+			<to>14</to>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>14</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>13</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2"/>
+			<read tape="2">0</read>
+			<write tape="2">0</write>
 			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>13</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>21</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>21</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>21</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>21</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">0</write>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
@@ -434,13 +455,13 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>7</from>
-			<to>8</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
+			<from>6</from>
+			<to>7</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
 			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">1</write>
+			<read tape="2">1</read>
+			<write tape="2">0</write>
 			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
@@ -450,84 +471,52 @@
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>2</from>
-			<to>3</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>13</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>13</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>4</to>
+			<from>1</from>
+			<to>2</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
 			<move tape="1">R</move>
 			<read tape="2"/>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
+			<write tape="2"/>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3">1</write>
 			<move tape="3">R</move>
 			<read tape="4">p</read>
 			<write tape="4">p</write>
-			<move tape="4">R</move>
+			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>7</from>
-			<to>8</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
+			<from>12</from>
+			<to>11</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
 			<move tape="1">S</move>
-			<read tape="2">0</read>
+			<read tape="2">1</read>
 			<write tape="2">1</write>
-			<move tape="2">L</move>
+			<move tape="2">S</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>12</from>
+			<to>11</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">R</move>
 		</transition>
 		<transition>
 			<from>4</from>
@@ -546,20 +535,84 @@
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>1</from>
-			<to>5</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
+			<from>2</from>
+			<to>3</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2"/>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
 			<read tape="4">q</read>
 			<write tape="4">q</write>
-			<move tape="4">R</move>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>22</from>
+			<to>6</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>22</from>
+			<to>6</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>12</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>12</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
 		</transition>
 		<transition>
 			<from>3</from>
@@ -578,54 +631,6 @@
 			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>15</from>
-			<to>22</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3">0</read>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>15</from>
-			<to>22</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3">0</read>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>16</from>
-			<to>0</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3">e</write>
-			<move tape="3">R</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
 			<from>3</from>
 			<to>3</to>
 			<read tape="1">e</read>
@@ -655,310 +660,6 @@
 			<move tape="3">S</move>
 			<read tape="4"/>
 			<write tape="4"/>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>3</from>
-			<to>3</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>16</from>
-			<to>16</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>6</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>6</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>21</from>
-			<to>21</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>21</from>
-			<to>21</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>11</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>8</from>
-			<to>9</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3">1</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>11</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>11</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>13</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">R</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
-		</transition>
-		<transition>
-			<from>2</from>
-			<to>2</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">R</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
 			<move tape="4">S</move>
 		</transition>
 		<transition>
@@ -978,28 +679,28 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>6</from>
-			<to>7</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
+			<from>8</from>
+			<to>9</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
 			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">R</move>
 			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
+			<write tape="3">1</write>
+			<move tape="3">R</move>
 			<read tape="4">q</read>
 			<write tape="4">q</write>
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>8</from>
+			<from>6</from>
 			<to>8</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">S</move>
-			<read tape="2">1</read>
+			<read tape="2">0</read>
 			<write tape="2">1</write>
 			<move tape="2">L</move>
 			<read tape="3"/>
@@ -1010,12 +711,44 @@
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>8</from>
+			<from>3</from>
+			<to>3</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>16</from>
+			<to>16</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>6</from>
 			<to>8</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
 			<move tape="1">S</move>
-			<read tape="2">1</read>
+			<read tape="2">0</read>
 			<write tape="2">1</write>
 			<move tape="2">L</move>
 			<read tape="3"/>
@@ -1026,92 +759,124 @@
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>8</from>
-			<to>8</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>8</from>
-			<to>8</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>6</from>
-			<to>7</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">0</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>5</from>
-			<to>6</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>5</from>
-			<to>6</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>5</from>
-			<to>5</to>
+			<from>21</from>
+			<to>21</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">R</move>
 			<read tape="2"/>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>21</from>
+			<to>21</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>11</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>13</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>11</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>13</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>11</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>13</from>
+			<to>13</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
 			<write tape="2">0</write>
 			<move tape="2">R</move>
 			<read tape="3"/>
@@ -1122,12 +887,12 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>5</from>
-			<to>5</to>
+			<from>13</from>
+			<to>13</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
 			<write tape="2">0</write>
 			<move tape="2">R</move>
 			<read tape="3"/>
@@ -1138,44 +903,28 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>3</from>
-			<to>3</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2"/>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>6</from>
-			<to>8</to>
+			<from>13</from>
+			<to>13</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">S</move>
 			<read tape="2">0</read>
-			<write tape="2">1</write>
-			<move tape="2">L</move>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>0</from>
-			<to>1</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
+			<from>13</from>
+			<to>13</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
 			<write tape="2">1</write>
 			<move tape="2">R</move>
 			<read tape="3"/>
@@ -1186,87 +935,55 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>6</from>
-			<to>8</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">S</move>
-			<read tape="2">0</read>
-			<write tape="2">1</write>
-			<move tape="2">L</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>21</from>
-			<to>15</to>
+			<from>13</from>
+			<to>13</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
 			<read tape="3"/>
 			<write tape="3"/>
-			<move tape="3">L</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">L</move>
+			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>21</from>
-			<to>15</to>
+			<from>13</from>
+			<to>13</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
 			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">L</move>
-			<read tape="4"/>
-			<write tape="4"/>
-			<move tape="4">L</move>
-		</transition>
-		<transition>
-			<from>4</from>
-			<to>14</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">R</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3">0</write>
+			<move tape="3">R</move>
 			<read tape="4">q</read>
 			<write tape="4">q</write>
 			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>4</from>
-			<to>14</to>
-			<read tape="1">e</read>
-			<write tape="1">e</write>
-			<move tape="1">S</move>
-			<read tape="2"/>
-			<write tape="2"/>
-			<move tape="2">S</move>
-			<read tape="3"/>
-			<write tape="3"/>
-			<move tape="3">S</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">S</move>
-		</transition>
-		<transition>
-			<from>3</from>
+			<from>16</from>
 			<to>0</to>
 			<read tape="1">e</read>
 			<write tape="1">e</write>
@@ -1282,10 +999,106 @@
 			<move tape="4">R</move>
 		</transition>
 		<transition>
+			<from>8</from>
+			<to>8</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>8</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2">1</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>8</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">0</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>8</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">0</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>5</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">0</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>8</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">1</write>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
 			<from>2</from>
 			<to>3</to>
-			<read tape="1">w</read>
-			<write tape="1">w</write>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
 			<move tape="1">S</move>
 			<read tape="2">1</read>
 			<write tape="2"/>
@@ -1298,40 +1111,56 @@
 			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>1</from>
-			<to>2</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2"/>
+			<from>7</from>
+			<to>8</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">0</read>
+			<write tape="2">1</write>
 			<move tape="2">L</move>
 			<read tape="3"/>
-			<write tape="3">1</write>
-			<move tape="3">R</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>21</from>
+			<to>15</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">L</move>
+			<read tape="4"/>
+			<write tape="4"/>
 			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>13</from>
-			<to>21</to>
+			<from>21</from>
+			<to>15</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
-			<move tape="1">R</move>
+			<move tape="1">S</move>
 			<read tape="2"/>
-			<write tape="2">1</write>
-			<move tape="2">R</move>
+			<write tape="2"/>
+			<move tape="2">S</move>
 			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
-			<move tape="4">R</move>
+			<write tape="3"/>
+			<move tape="3">L</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">L</move>
 		</transition>
 		<transition>
-			<from>13</from>
-			<to>21</to>
+			<from>5</from>
+			<to>5</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">R</move>
@@ -1339,15 +1168,15 @@
 			<write tape="2">0</write>
 			<move tape="2">R</move>
 			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">q</read>
-			<write tape="4">q</write>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>13</from>
-			<to>21</to>
+			<from>5</from>
+			<to>5</to>
 			<read tape="1">0</read>
 			<write tape="1">0</write>
 			<move tape="1">R</move>
@@ -1355,56 +1184,200 @@
 			<write tape="2">0</write>
 			<move tape="2">R</move>
 			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
 			<move tape="4">R</move>
 		</transition>
 		<transition>
-			<from>13</from>
-			<to>21</to>
-			<read tape="1">1</read>
-			<write tape="1">1</write>
-			<move tape="1">R</move>
-			<read tape="2"/>
-			<write tape="2">1</write>
+			<from>3</from>
+			<to>3</to>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>10</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2">1</read>
+			<write tape="2"/>
 			<move tape="2">R</move>
 			<read tape="3"/>
-			<write tape="3">0</write>
-			<move tape="3">R</move>
-			<read tape="4">p</read>
-			<write tape="4">p</write>
-			<move tape="4">R</move>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>12</from>
-			<to>11</to>
+			<from>9</from>
+			<to>10</to>
 			<read tape="1">1</read>
 			<write tape="1">1</write>
 			<move tape="1">S</move>
 			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
+			<write tape="2"/>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>17</to>
+			<read tape="1"/>
+			<write tape="1"/>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>16</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
 			<read tape="4"/>
 			<write tape="4"/>
-			<move tape="4">R</move>
+			<move tape="4">S</move>
 		</transition>
 		<transition>
-			<from>12</from>
-			<to>11</to>
-			<read tape="1">0</read>
-			<write tape="1">0</write>
+			<from>14</from>
+			<to>16</to>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
 			<move tape="1">S</move>
-			<read tape="2">1</read>
-			<write tape="2">1</write>
-			<move tape="2">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>4</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">1</write>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">1</write>
+			<move tape="3">R</move>
+			<read tape="4">p</read>
+			<write tape="4">p</write>
+			<move tape="4">R</move>
+		</transition>
+		<transition>
+			<from>15</from>
+			<to>22</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3">0</read>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>15</from>
+			<to>22</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3">0</read>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read tape="1">0</read>
+			<write tape="1">0</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4"/>
+			<write tape="4"/>
+			<move tape="4">L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3">w</write>
+			<move tape="3">R</move>
 			<read tape="4"/>
 			<write tape="4"/>
 			<move tape="4">R</move>
@@ -1418,6 +1391,54 @@
 			<read tape="2">0</read>
 			<write tape="2"/>
 			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>9</to>
+			<read tape="1">1</read>
+			<write tape="1">1</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">R</move>
+			<read tape="3"/>
+			<write tape="3">1</write>
+			<move tape="3">R</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>14</to>
+			<read tape="1">w</read>
+			<write tape="1">w</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
+			<read tape="3"/>
+			<write tape="3"/>
+			<move tape="3">S</move>
+			<read tape="4">q</read>
+			<write tape="4">q</write>
+			<move tape="4">S</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>14</to>
+			<read tape="1">e</read>
+			<write tape="1">e</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">S</move>
 			<read tape="3"/>
 			<write tape="3"/>
 			<move tape="3">S</move>
